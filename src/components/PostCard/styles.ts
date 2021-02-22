@@ -67,6 +67,8 @@ export const Image = styled.img`
   opacity: 0.6;
   transition: opacity 400ms;
 
+  cursor: pointer;
+
   &:hover {
     opacity: 1;
   }

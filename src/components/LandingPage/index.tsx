@@ -30,20 +30,18 @@ const LandingPage = ({ posts }: Props) => {
       </S.WrapperSlider>
 
       <S.Post>
-        {posts
-          .map(({ title, id, author, cover, slug, created_at }) => {
-            return (
-              <PostCard
-                key={id}
-                title={title}
-                author={author}
-                cover={cover}
-                slug={slug}
-                created_at={formatData(created_at)}
-              />
-            );
-          })
-          .reverse()}
+        {posts.map(({ title, id, author, cover, slug, created_at }) => {
+          return (
+            <PostCard
+              key={id}
+              title={title}
+              author={author}
+              cover={cover}
+              slug={slug}
+              created_at={formatData(created_at)}
+            />
+          );
+        })}
       </S.Post>
     </S.Wrapper>
   );

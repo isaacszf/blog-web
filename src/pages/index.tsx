@@ -22,7 +22,7 @@ export default function Index({ posts }: MainProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = await getPosts();
+  const posts = await getPosts('_sort=id:desc&_start=0&_limit=12');
 
   return {
     props: {

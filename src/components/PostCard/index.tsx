@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import * as S from './styles';
 
 type Props = {
@@ -19,9 +21,9 @@ type Props = {
 const PostCard = ({ title, cover, author, slug, created_at }: Props) => {
   return (
     <S.Container>
-      <a href={`http://localhost:3000/${slug}`}>
+      <Link href="/post/[slug]" as={`/post/${slug}`}>
         <S.Image src={cover.formats.small.url} alt="Small Blog Image" />
-      </a>
+      </Link>
 
       <S.Details>
         <S.Title>{title}</S.Title>
