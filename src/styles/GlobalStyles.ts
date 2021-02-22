@@ -8,9 +8,14 @@ export default createGlobalStyle`
       box-sizing: border-box;
     }
 
+    html, body, _next {
+      width: 100%;
+      height: 100%;
+    }
+
     body {
       color: ${theme.colors.black};
-      font-family: ----apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+      font-family: ----apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
   `}
 `;

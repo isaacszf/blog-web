@@ -13,9 +13,10 @@ type Props = {
       };
     };
   };
+  created_at: string;
 };
 
-const PostCard = ({ title, cover, author, slug }: Props) => {
+const PostCard = ({ title, cover, author, slug, created_at }: Props) => {
   return (
     <S.Container>
       <a href={`http://localhost:3000/${slug}`}>
@@ -27,6 +28,8 @@ const PostCard = ({ title, cover, author, slug }: Props) => {
         <S.Author>
           Feito por <strong>{author.name}</strong>
         </S.Author>
+
+        <S.Data>{created_at}</S.Data>
       </S.Details>
     </S.Container>
   );

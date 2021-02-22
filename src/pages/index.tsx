@@ -1,8 +1,12 @@
 import { GetStaticProps } from 'next';
 
+// Data (utils)
 import { getPosts } from '../data/posts/getPosts';
+
+// Utils
 import { PostData } from '../types/post';
 
+// Components (Pages)
 import LandingPage from '../components/LandingPage';
 
 type MainProps = {

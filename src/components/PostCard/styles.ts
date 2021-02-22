@@ -13,6 +13,7 @@ const appearFromTop = keyframes`
 
 export const Container = styled.article`
   display: inline-flex;
+  flex-direction: column;
 
   align-items: center;
   justify-content: center;
@@ -23,18 +24,23 @@ export const Container = styled.article`
 `;
 
 export const Details = styled.div`
-  display: block;
-  position: absolute;
-
-  text-align: center;
-
   ${({ theme }) => css`
-    color: ${theme.colors.white};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: ${theme.colors.lightGray};
+
+    min-width: 14rem;
+    min-height: 14rem;
+
+    text-align: center;
+    color: ${theme.colors.black};
     font-size: 1.6rem;
 
     padding: 1.5rem;
     width: 26rem;
-
   `}
 `;
 
@@ -50,8 +56,7 @@ export const Author = styled.span`
 `;
 
 export const Image = styled.img`
-  background-size: cover;
-  border-radius: 1.5rem;
+  background-size: auto;
 
   width: 26rem;
   height: 26rem;
@@ -62,4 +67,10 @@ export const Image = styled.img`
   &:hover {
     opacity: 1;
   }
+`;
+
+export const Data = styled.span`
+  margin-top: 1rem;
+
+  font-size: 0.6rem;
 `;
