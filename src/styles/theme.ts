@@ -1,8 +1,11 @@
 export default {
   colors: {
+    backgroundWhite: '#edf2f4',
     white: '#FAFAFA',
+    secondaryWhite: '#f4f1de',
+    gray: '#eee',
     black: '#242526',
-    lightGray: '#f2f2f2'
+    blue: '#2b2d42'
   },
   weights: {
     normal: 400,
