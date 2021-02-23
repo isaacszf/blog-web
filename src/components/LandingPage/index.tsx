@@ -25,6 +25,7 @@ const LandingPage = ({ posts }: Props) => {
       <S.WrapperSlider>
         <AwesomeSlider>
           <div data-src="images/favela2.jpg" />
+          <div data-src="images/favela.jpg" />
         </AwesomeSlider>
       </S.WrapperSlider>
 

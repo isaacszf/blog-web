@@ -37,6 +37,9 @@ export type PostCoverProps = {
     small: {
       url: string;
     }
+    thumbnail: {
+      url: string;
+    }
   }
 };
 

@@ -113,7 +113,7 @@ export const AuthorInfoContainer = styled.div`
 
   @media(max-width: 1024px) {
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 `;
 

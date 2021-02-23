@@ -37,7 +37,6 @@ export const Details = styled.div`
     background: #fff;
     border-radius: 0.2rem;
 
-    min-width: 14rem;
     min-height: 14rem;
 
     text-align: center;
@@ -52,6 +51,8 @@ export const Details = styled.div`
 `;
 
 export const Title = styled.h3`
+  font-size: 1.3rem;
+
   margin-bottom: 1rem;
 `;
 

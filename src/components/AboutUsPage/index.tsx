@@ -37,13 +37,13 @@ const AboutUsPage = () => {
             </ul>
             <ul>
               <li>
-                <strong>Alex Mendes</strong> - Ak no CS depois de 4 anos jogando
-                & crente
+                <strong>Viszla</strong> - Ak no CS depois de 4 anos jogando &
+                crente
               </li>
             </ul>
             <ul>
               <li>
-                <strong>Lucas Vinicius</strong> - Random
+                <strong>LucascscXD</strong> - Random
               </li>
             </ul>
             <ul>
