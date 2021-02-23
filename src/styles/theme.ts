@@ -5,7 +5,8 @@ export default {
     secondaryWhite: '#f4f1de',
     gray: '#eee',
     black: '#242526',
-    blue: '#2b2d42'
+    blue: '#2b2d42',
+    purple: '#a3216b',
   },
   weights: {
     normal: 400,

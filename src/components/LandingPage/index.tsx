@@ -19,7 +19,7 @@ type Props = {
 
 const LandingPage = ({ posts }: Props) => {
   return (
-    <S.Wrapper>
+    <>
       <Header />
 
       <S.WrapperSlider>
@@ -43,7 +43,7 @@ const LandingPage = ({ posts }: Props) => {
           );
         })}
       </S.Post>
-    </S.Wrapper>
+    </>
   );
 };
 

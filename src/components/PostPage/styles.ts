@@ -6,12 +6,17 @@ export const WrapperContainer = styled.div`
   justify-content: center;
 
   margin: auto 0;
+
+  @media(max-width: 1024px) {
+    display: block;
+
+    width: 65rem;
+    height: 40rem;
+  }
 `;
 
 export const Content = styled.div`
   margin-top: 8rem;
-
-  width: 100%;
   max-width: 968px;
 
   font-size: 1rem;
@@ -19,9 +24,8 @@ export const Content = styled.div`
   @media(max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
+    margin-left: 1.5rem;
   }
 `;
 
@@ -39,12 +43,16 @@ export const Heading = styled.h1`
 
 export const TextContainer = styled.article`
   margin-top: 2.4rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 
   max-width: 100%;
 
   p {
     margin: 1.5rem auto;
+
+    img {
+
+    }
   }
 
   ul, ol {
@@ -65,6 +73,18 @@ export const TextContainer = styled.article`
       line-height: 1.5;
       font-size: 1.4rem;
     `}
+  }
+
+  @media(max-width: 1024px) {
+    font-size: 2rem;
+
+    p {
+      margin: 3.5rem auto;
+    }
+
+    ul, ol {
+      margin: 3.5rem;
+    }
   }
 `;
 

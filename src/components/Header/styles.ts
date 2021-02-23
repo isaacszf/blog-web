@@ -1,5 +1,9 @@
 import styled, { css } from 'styled-components';
 
+type Props = {
+  isMobile?: boolean;
+};
+
 export const Wrapper = styled.div`
   @media(max-width: 1024px) {
     margin: 0 auto;
@@ -13,8 +17,8 @@ export const Header = styled.header`
 
     z-index: 9999;
 
-    background: ${theme.colors.blue};
-    color: ${theme.colors.gray};
+    background: #010101;
+    color: ${theme.colors.white};
 
     display: flex;
     justify-content: space-between;
@@ -24,15 +28,26 @@ export const Header = styled.header`
     top: 0;
     left: 0;
 
+    svg {
+      cursor: pointer;
+    }
+
     @media(max-width: 1024px) {
       display: block;
 
       text-align: center;
+
+      svg {
+        height: 1.2rem;
+        width: 1.2rem;
+
+        margin-top: 0.4rem;
+      }
     }
   `}
 `;
 
-export const Links = styled.nav`
+export const Links = styled.nav<Props>`
   display: flex;
   align-items: center;
 

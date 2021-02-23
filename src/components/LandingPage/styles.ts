@@ -11,14 +11,6 @@ const appearFromTop = keyframes`
   }
 `;
 
-export const Wrapper = styled.div`
-  width: 100%;
-
-  @media(max-width: 1024px) {
-    display: block;
-  }
-`;
-
 export const Post = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +18,7 @@ export const Post = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin: auto 3.4rem;
+  margin: auto 3.2rem;
 
   @media(max-width: 1024px) {
     display: block;

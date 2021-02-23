@@ -1,25 +1,38 @@
 import Link from 'next/link';
+import { FiArrowRight } from 'react-icons/fi';
 
 import * as S from './styles';
 
-const Header = () => {
+type Props = {
+  isAboutPage?: boolean;
+};
+
+const Header = ({ isAboutPage = false }: Props) => {
   return (
     <S.Wrapper>
       <S.Header>
         <S.Title>Blog dos Enrosca Pneu</S.Title>
 
-        <S.Links>
-          <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <Link href="/">Quem somos nós?</Link>
-            </li>
-          </ul>
-        </S.Links>
+        {isAboutPage ? (
+          <span>
+            <Link href="/">
+              <FiArrowRight size={36} color="#eee" />
+            </Link>
+          </span>
+        ) : (
+          <S.Links>
+            <ul>
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <Link href="/about">Quem somos nós?</Link>
+              </li>
+            </ul>
+          </S.Links>
+        )}
       </S.Header>
     </S.Wrapper>
   );

@@ -8,11 +8,6 @@ export default createGlobalStyle`
       box-sizing: border-box;
     }
 
-    html, body, _next {
-      width: 100%;
-      height: 100%;
-    }
-
     body {
       background: ${theme.colors.backgroundWhite};
 
