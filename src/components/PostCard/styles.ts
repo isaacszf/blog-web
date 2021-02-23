@@ -21,6 +21,10 @@ export const Container = styled.article`
   padding: 1rem;
 
   animation: ${appearFromTop} 2s;
+
+  @media(max-width: 1024px) {
+    display: inline-flex;
+  }
 `;
 
 export const Details = styled.div`
@@ -30,7 +34,8 @@ export const Details = styled.div`
     justify-content: center;
     flex-direction: column;
 
-    background: ${theme.colors.secondaryWhite};
+    background: #fff;
+    border-radius: 0.2rem;
 
     min-width: 14rem;
     min-height: 14rem;

@@ -110,6 +110,11 @@ export const AuthorInfoContainer = styled.div`
     width: 8.5rem;
     height: 8.5rem;
   }
+
+  @media(max-width: 1024px) {
+    width: 100%;
+    font-size: 1.8rem;
+  }
 `;
 
 export const AuthorPhoto = styled.div`

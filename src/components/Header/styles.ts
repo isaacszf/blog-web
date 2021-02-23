@@ -17,7 +17,7 @@ export const Header = styled.header`
 
     z-index: 9999;
 
-    background: #010101;
+    background: #292929;
     color: ${theme.colors.white};
 
     display: flex;

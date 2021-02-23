@@ -23,26 +23,27 @@ const LandingPage = ({ posts }: Props) => {
       <Header />
 
       <S.WrapperSlider>
-        <AwesomeSlider animation="cubeAnimation">
+        <AwesomeSlider>
           <div data-src="images/favela2.jpg" />
-          <div data-src="images/favela.jpg" />
         </AwesomeSlider>
       </S.WrapperSlider>
 
-      <S.Post>
-        {posts.map(({ title, id, author, cover, slug, created_at }) => {
-          return (
-            <PostCard
-              key={id}
-              title={title}
-              author={author}
-              cover={cover}
-              slug={slug}
-              created_at={formatData(created_at)}
-            />
-          );
-        })}
-      </S.Post>
+      <S.Container>
+        <S.Post>
+          {posts.map(({ title, id, author, cover, slug, created_at }) => {
+            return (
+              <PostCard
+                key={id}
+                title={title}
+                author={author}
+                cover={cover}
+                slug={slug}
+                created_at={formatData(created_at)}
+              />
+            );
+          })}
+        </S.Post>
+      </S.Container>
     </>
   );
 };

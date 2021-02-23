@@ -11,14 +11,33 @@ const appearFromTop = keyframes`
   }
 `;
 
+export const Container = styled.div`
+  position: absolute;
+  top: 90%;
+
+  width: 100vw;
+  height: 100vh;
+
+  max-width:100%;
+
+  padding: 2rem;
+  background: ${({ theme }) => theme.colors.backgroundWhite};
+
+  @media(max-width: 1024px) {
+    position: inherit;
+    padding: 0;
+  }
+`;
+
 export const Post = styled.div`
   display: flex;
   flex-wrap: wrap;
+  z-index: 9999;
 
   align-items: center;
   justify-content: center;
 
-  margin: auto 3.2rem;
+  margin: auto 0.4rem;
 
   @media(max-width: 1024px) {
     display: block;
@@ -31,9 +50,12 @@ export const WrapperSlider = styled.div`
   height: 100%;
 
   margin: 0 auto;
-  margin-bottom: 3rem;
 
   animation: ${appearFromTop} 1s;
+
+  .awssld__box, .awssld--active {
+    z-index: 0;
+  }
 
   @media(max-width: 1024px) {
     display: none;
