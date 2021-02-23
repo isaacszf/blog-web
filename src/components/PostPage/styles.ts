@@ -43,20 +43,16 @@ export const Heading = styled.h1`
 
 export const TextContainer = styled.article`
   margin-top: 2.4rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 
   max-width: 100%;
 
   p {
     margin: 1.5rem auto;
-
-    img {
-
-    }
   }
 
   ul, ol {
-    margin: 1.5rem;
+    margin: 2.3rem;
   }
 
   pre {

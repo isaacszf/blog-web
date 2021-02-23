@@ -51,6 +51,9 @@ export const Links = styled.nav<Props>`
   display: flex;
   align-items: center;
 
+  background: #2b2b2b;
+  border-radius: 1.6rem;
+
   ul {
     list-style-type: none;
     position: relative;
