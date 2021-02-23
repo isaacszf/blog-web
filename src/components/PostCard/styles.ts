@@ -51,9 +51,9 @@ export const Details = styled.div`
 `;
 
 export const Title = styled.h3`
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 `;
 
 export const Author = styled.span`
