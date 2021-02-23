@@ -6,17 +6,14 @@ import { countPosts } from '../../data/posts/countPosts';
 
 import { PostData } from '../../types/post';
 
+import PostPage from '../../components/PostPage';
+
 type Props = {
   post: PostData;
 };
 
 const DynamicPost = ({ post }: Props) => {
-  return (
-    <>
-      <h1>{post.title}</h1>
-      <p dangerouslySetInnerHTML={{ __html: post.content }} />
-    </>
-  );
+  return <PostPage post={post} />;
 };
 
 export default DynamicPost;

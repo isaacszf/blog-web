@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import * as S from './styles';
 
 const Header = () => {
@@ -9,12 +11,12 @@ const Header = () => {
         <S.Links>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="/">Quem somos nós?</a>
+              <Link href="/">Quem somos nós?</Link>
             </li>
           </ul>
         </S.Links>

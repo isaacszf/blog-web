@@ -42,7 +42,6 @@ export const Details = styled.div`
     padding: 1.5rem;
     width: 26rem;
 
-    border: 0.01rem solid ${theme.colors.black};
     border-top: none;
   `}
 `;

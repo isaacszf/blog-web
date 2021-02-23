@@ -26,7 +26,7 @@ export const Post = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin: auto 3rem;
+  margin: auto 3.4rem;
 
   @media(max-width: 1024px) {
     display: block;

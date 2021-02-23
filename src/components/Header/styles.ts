@@ -1,8 +1,6 @@
 import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
-  margin: auto 8.7rem;
-
   @media(max-width: 1024px) {
     margin: 0 auto;
   }
