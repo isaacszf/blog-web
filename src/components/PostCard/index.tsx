@@ -5,6 +5,9 @@ import * as S from './styles';
 type Props = {
   title: string;
   slug: string;
+  category: {
+    name: string;
+  };
   author: {
     name: string;
   };
@@ -18,7 +21,14 @@ type Props = {
   created_at: string;
 };
 
-const PostCard = ({ title, cover, author, slug, created_at }: Props) => {
+const PostCard = ({
+  title,
+  cover,
+  author,
+  slug,
+  created_at,
+  category,
+}: Props) => {
   return (
     <S.Container>
       <Link href="/post/[slug]" as={`/post/${slug}`}>
@@ -33,6 +43,13 @@ const PostCard = ({ title, cover, author, slug, created_at }: Props) => {
           Feito por <strong>{author.name}</strong>
         </S.Author>
       </S.Details>
+
+      <S.Tags>
+        Tags:{' '}
+        <Link href={`/categories/${category.name.toLowerCase()}`}>
+          {category.name}
+        </Link>
+      </S.Tags>
 
       <S.DataContainer>
         <S.Data>{created_at}</S.Data>

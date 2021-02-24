@@ -1,8 +1,3 @@
-import AwesomeSlider from 'react-awesome-slider';
-import withAutoplay from 'react-awesome-slider/dist/autoplay';
-
-import 'react-awesome-slider/dist/styles.css';
-
 import * as S from './styles';
 
 // Types
@@ -17,23 +12,13 @@ import { formatData } from '../../utils/formatData';
 
 type Props = {
   posts: PostData[];
+  category?: string;
 };
 
-const AutoplaySlider = withAutoplay(AwesomeSlider);
-
-const LandingPage = ({ posts }: Props) => {
+const LandingPage = ({ posts, category }: Props) => {
   return (
     <>
       <Header />
-
-      <S.WrapperSlider>
-        <AutoplaySlider play={true} cancelOnInteraction={false} interval={2300}>
-          <div data-src="images/favela2.jpg" />
-          <div data-src="images/favela.jpg" />
-        </AutoplaySlider>
-      </S.WrapperSlider>
-
-      <S.Animation />
 
       <S.Container>
         <S.PresentationContainer>
@@ -44,6 +29,12 @@ const LandingPage = ({ posts }: Props) => {
             tenha em mente que o Blog não está 100% finalizado.
           </S.PresentationDescription>
         </S.PresentationContainer>
+
+        {category && (
+          <S.Category>
+            Categoria: {category.charAt(0).toUpperCase() + category.slice(1)}
+          </S.Category>
+        )}
 
         <S.Post>
           {posts.map(

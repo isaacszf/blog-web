@@ -98,6 +98,17 @@ export const Author = styled.p`
   color: gray;
 
   margin-top: 0.6rem;
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+
+    color: ${({ theme }) => theme.colors.purple};
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 export const AuthorInfoContainer = styled.div`

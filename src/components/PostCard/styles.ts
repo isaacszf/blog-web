@@ -71,6 +71,32 @@ export const Author = styled.span`
   `}
 `;
 
+export const Tags = styled.span`
+  ${({ theme }) => css`
+    font-weight: ${theme.weights.light};
+    font-size: 1rem;
+
+    border-top: 1px solid #e8e7e3;
+
+    background: ${theme.colors.white};
+    width: 100%;
+
+    padding: 1rem;
+    text-align: center;
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+
+      color: ${({ theme }) => theme.colors.purple};
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  `}
+`;
+
 export const Image = styled.img`
   background-size: auto;
 

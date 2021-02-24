@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import * as S from './styles';
 
 import Header from '../Header';
@@ -28,7 +30,10 @@ const PostPage = ({ post }: Props) => {
         />
         <S.Author>
           Feito por <strong>{post.author.name}</strong> em{' '}
-          {formatData(post.created_at)}
+          {formatData(post.created_at)} |{' '}
+          <Link href={`/categories/${post.category.name.toLowerCase()}`}>
+            {post.category.name}
+          </Link>
         </S.Author>
 
         <S.TextContainer dangerouslySetInnerHTML={{ __html: post.content }} />
