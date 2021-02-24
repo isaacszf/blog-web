@@ -9,6 +9,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider theme={theme}>
       <Head>
+        <link rel="shortcut icon" href="/favicon.png" />
         <title>Blog dos Enrosca Pneu</title>
         <meta
           name="description"
