@@ -24,9 +24,7 @@ export const Container = styled.div`
   background: ${({ theme }) => theme.colors.backgroundWhite};
 
   @media(max-width: 1024px) {
-    position: absolute;
-    top: auto;
-    bottom: -350px;
+    position: inherit;
 
     padding: 0;
   }
@@ -73,6 +71,13 @@ export const Post = styled.div`
     display: block;
     margin: 0;
   }
+
+  @media only screen and (min-device-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 2rem;
+  }
 `;
 
 export const WrapperSlider = styled.div`
@@ -89,10 +94,21 @@ export const WrapperSlider = styled.div`
 
   @media(max-width: 1024px) {
     width: 28rem;
+
     animation: none;
 
     img {
       width: 28rem;
+    }
+  }
+
+  @media only screen and (min-device-width: 768px) {
+    width: 100%;
+
+    animation: none;
+
+    img {
+      width: 100%;
     }
   }
 `;
