@@ -24,9 +24,10 @@ export const Container = styled.article`
 
   @media(max-width: 1024px) {
     display: inline-flex;
+    animation: none;
 
     &:first-child {
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
   }
 `;

@@ -24,7 +24,10 @@ export const Container = styled.div`
   background: ${({ theme }) => theme.colors.backgroundWhite};
 
   @media(max-width: 1024px) {
-    position: inherit;
+    position: absolute;
+    top: auto;
+    bottom: -350px;
+
     padding: 0;
   }
 `;
@@ -85,7 +88,12 @@ export const WrapperSlider = styled.div`
   }
 
   @media(max-width: 1024px) {
-    display: none;
+    width: 28rem;
+    animation: none;
+
+    img {
+      width: 28rem;
+    }
   }
 `;
 
