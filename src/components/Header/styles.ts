@@ -33,8 +33,6 @@ export const Header = styled.header`
     }
 
     @media(max-width: 1024px) {
-      display: block;
-
       text-align: center;
 
       svg {
@@ -88,6 +86,8 @@ export const Title = styled.h3`
     font-size: 1.3rem;
     font-weight: ${theme.weights.xbold};
 
-    position: relative;
+    @media(max-width: 1024px) {
+      font-size: 1.3rem;
+    }
   `}
 `;

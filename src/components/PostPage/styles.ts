@@ -37,8 +37,12 @@ export const CoverImage = styled.img`
 `;
 
 export const Heading = styled.h1`
-  font-size: 4rem;
+  font-size: 2.4rem;
   text-align: center;
+
+  @media(max-width: 1024px) {
+    font-size: 4rem;
+  }
 `;
 
 export const TextContainer = styled.article`
