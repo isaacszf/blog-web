@@ -43,7 +43,7 @@ const AboutUsPage = () => {
             </ul>
             <ul>
               <li>
-                <strong>LucascscXD</strong> - Random
+                <strong>Didi</strong> - Random
               </li>
             </ul>
             <ul>

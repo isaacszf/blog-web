@@ -26,13 +26,17 @@ const PostCard = ({ title, cover, author, slug, created_at }: Props) => {
       </Link>
 
       <S.Details>
-        <S.Title>{title}</S.Title>
+        <S.TitleContainer>
+          <S.Title>{title}</S.Title>
+        </S.TitleContainer>
         <S.Author>
           Feito por <strong>{author.name}</strong>
         </S.Author>
-
-        <S.Data>{created_at}</S.Data>
       </S.Details>
+
+      <S.DataContainer>
+        <S.Data>{created_at}</S.Data>
+      </S.DataContainer>
     </S.Container>
   );
 };

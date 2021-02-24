@@ -29,15 +29,42 @@ export const Container = styled.div`
   }
 `;
 
+export const PresentationContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: ${appearFromTop} 3s;
+
+  border-bottom: 1px solid #cfcfcc;
+  padding-bottom: 2.4rem;
+
+  @media(max-width: 1024px) {
+    display: none;
+  }
+`;
+
+export const PresentationDescription = styled.div`
+  max-width: 996px;
+
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.12rem;
+
+  text-align: center;
+`;
+
 export const Post = styled.div`
   display: flex;
   flex-wrap: wrap;
+
   z-index: 9999;
 
   align-items: center;
   justify-content: center;
 
   margin: auto 0.4rem;
+  margin-top: 1.5rem;
 
   @media(max-width: 1024px) {
     display: block;
@@ -61,3 +88,5 @@ export const WrapperSlider = styled.div`
     display: none;
   }
 `;
+
+export const Animation = styled.div``;

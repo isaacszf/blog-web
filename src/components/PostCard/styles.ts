@@ -34,14 +34,14 @@ export const Container = styled.article`
 export const Details = styled.div`
   ${({ theme }) => css`
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
 
     background: #fff;
     border-radius: 0.2rem;
 
-    min-height: 14rem;
+    min-height: 12rem;
 
     text-align: center;
     color: ${theme.colors.black};
@@ -55,9 +55,12 @@ export const Details = styled.div`
 `;
 
 export const Title = styled.h3`
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+`;
 
-  margin-bottom: 2rem;
+export const TitleContainer = styled.div`
+  margin-bottom: 1.2rem;
+  text-align: left;
 `;
 
 export const Author = styled.span`
@@ -83,8 +86,15 @@ export const Image = styled.img`
   }
 `;
 
-export const Data = styled.span`
-  margin-top: 1rem;
+export const Data = styled.small`
+  font-size: 1rem;
+`;
 
-  font-size: 0.6rem;
+export const DataContainer = styled.div`
+  width: 100%;
+
+  padding: .75rem;
+  background: #faf8f0;
+  border-top: 1px solid #e8e7e3;
+  text-align: center;
 `;
