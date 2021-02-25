@@ -85,7 +85,7 @@ export const CoverImageContainer = styled.div`
 
   animation: ${appearFromTop} 2s;
 
-  background: url('https://cdn.discordapp.com/attachments/668194407899463691/743497060010950706/image0.gif') no-repeat fixed;
+  background: url('https://i.imgur.com/HlYgmSC.gif') no-repeat fixed;
   background-size: cover;
   background-position: center top;
 
