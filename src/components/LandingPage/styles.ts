@@ -18,10 +18,9 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
 
-  max-width:100%;
+  max-width: 100%;
 
   padding: 2rem;
-  background: ${({ theme }) => theme.colors.backgroundWhite};
 
   @media(max-width: 1024px) {
     position: inherit;
@@ -59,7 +58,7 @@ export const Post = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-  z-index: 9999;
+  width: 100%;
 
   align-items: center;
   justify-content: center;
@@ -80,17 +79,30 @@ export const Post = styled.div`
   }
 `;
 
-export const WrapperSlider = styled.div`
+export const CoverImageContainer = styled.div`
+  width: 100%;
+  height: 90vh;
+
+  animation: ${appearFromTop} 2s;
+
+  background: url('https://cdn.discordapp.com/attachments/668194407899463691/743497060010950706/image0.gif') no-repeat fixed;
+  background-size: cover;
+  background-position: center top;
+
+  @media(max-width: 1024px) {
+    width: 28rem;
+
+    background-size: cover;
+  }
+`;
+
+export const CoverImage = styled.div`
   width: 100%;
   height: 100%;
 
   margin: 0 auto;
 
-  animation: ${appearFromTop} 1s;
-
-  .awssld__box, .awssld--active {
-    z-index: 0;
-  }
+  background: transparent;
 
   @media(max-width: 1024px) {
     width: 28rem;
@@ -112,5 +124,3 @@ export const WrapperSlider = styled.div`
     }
   }
 `;
-
-export const Animation = styled.div``;

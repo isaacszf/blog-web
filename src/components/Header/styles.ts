@@ -13,6 +13,8 @@ export const Wrapper = styled.div`
 export const Header = styled.header`
   ${({ theme }) => css`
     padding: 0.6rem 2.4rem 0.6rem 2rem;
+    box-shadow: 0.3rem 0.4rem 1.3rem rgba(0, 0, 0, 0.3);
+
     width: 100%;
 
     z-index: 9999;

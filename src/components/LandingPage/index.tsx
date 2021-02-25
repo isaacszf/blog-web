@@ -1,8 +1,3 @@
-import AwesomeSlider from 'react-awesome-slider';
-import withAutoplay from 'react-awesome-slider/dist/autoplay';
-
-import 'react-awesome-slider/dist/styles.css';
-
 import * as S from './styles';
 
 // Types
@@ -19,21 +14,14 @@ type Props = {
   posts: PostData[];
 };
 
-const AutoplaySlider = withAutoplay(AwesomeSlider);
-
 const LandingPage = ({ posts }: Props) => {
   return (
     <>
       <Header />
 
-      <S.WrapperSlider>
-        <AutoplaySlider play={true} cancelOnInteraction={false} interval={2300}>
-          <div data-src="images/favela2.jpg" />
-          <div data-src="images/favela.jpg" />
-        </AutoplaySlider>
-      </S.WrapperSlider>
-
-      <S.Animation />
+      <S.CoverImageContainer>
+        <S.CoverImage />
+      </S.CoverImageContainer>
 
       <S.Container>
         <S.PresentationContainer>
