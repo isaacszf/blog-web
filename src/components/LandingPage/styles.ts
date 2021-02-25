@@ -85,7 +85,7 @@ export const CoverImageContainer = styled.div`
 
   animation: ${appearFromTop} 2s;
 
-  background: url('https://i.imgur.com/HlYgmSC.gif') no-repeat fixed;
+  background: url('images/20034.jpg') no-repeat fixed;
   background-size: cover;
   background-position: center top;
 
@@ -93,6 +93,10 @@ export const CoverImageContainer = styled.div`
     width: 28rem;
 
     background-size: cover;
+  }
+
+  @media only screen and (min-device-width: 768px) {
+    width: 100%;
   }
 `;
 
