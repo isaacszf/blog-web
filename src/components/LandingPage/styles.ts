@@ -85,7 +85,7 @@ export const CoverImageContainer = styled.div`
 
   animation: ${appearFromTop} 2s;
 
-  background: url('images/20034.jpg') no-repeat fixed;
+  background: url('images/wallpapers-do-star-wars-02.jpg') no-repeat fixed;
   background-size: cover;
   background-position: center top;
 

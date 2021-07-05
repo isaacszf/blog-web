@@ -12,8 +12,7 @@ const AboutUsPage = () => {
           <h2>Oque é este Blog?</h2>
 
           <p>
-            Um Blog pra arquivar umas paradas e fazer alguns testes de Pentest,
-            interprete como quiser.
+            Um Blog sobre filmes.
           </p>
         </S.Question>
         <S.Question>
@@ -22,54 +21,25 @@ const AboutUsPage = () => {
           <S.Authors>
             <ul>
               <li>
-                <strong>Isaac (IkeSZ)</strong> - Desenvolvedor e criador do Blog
+                <strong>Isaac</strong> - Desenvolvedor e criador do Blog
               </li>
             </ul>
             <ul>
               <li>
-                <strong>Dzl</strong> - Sei lá
+                <strong>Daniel</strong> - Autor
               </li>
             </ul>
             <ul>
               <li>
-                <strong>Jão Pedro</strong> - Random e deu a ideia
+                <strong>João Paulo</strong> - Autor
               </li>
             </ul>
             <ul>
               <li>
-                <strong>Viszla</strong> - Ak no CS depois de 4 anos jogando &
-                crente
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <strong>Didi</strong> - Random
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <strong>LucasDS</strong> - Random e faz uns bagulho com Lua
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <strong>Mikael</strong> - Random
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <strong>Felipe Reis</strong> - 🔥 LIT 🔥
+                <strong>Alex Mendes</strong> - Autor
               </li>
             </ul>
           </S.Authors>
-        </S.Question>
-        <S.Question>
-          <h2>Por que você fez este Blog?</h2>
-
-          <p>
-            Deu vontade de fazer um projeto e colocar no ar, também foi para
-            praticar meu front.
-          </p>
         </S.Question>
         <S.Question>
           <h2>Quais foram as ferramentas utilizadas?</h2>

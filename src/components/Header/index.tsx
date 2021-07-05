@@ -11,7 +11,7 @@ const Header = ({ isAboutPage = false }: Props) => {
   return (
     <S.Wrapper>
       <S.Header>
-        <S.Title>Blog dos Enrosca Pneu</S.Title>
+        <S.Title>Movie Palace - Trabalho de Artes</S.Title>
 
         {isAboutPage ? (
           <span>

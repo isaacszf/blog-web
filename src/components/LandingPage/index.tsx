@@ -26,10 +26,10 @@ const LandingPage = ({ posts }: Props) => {
       <S.Container>
         <S.PresentationContainer>
           <S.PresentationDescription>
-            O "Blog dos Enrosca Pneu" é um lugar experimental, usamos ele
-            principalmente para arquivar informações em forma de posts. Sinta-se
-            a vontade para ler os posts e interagir nos comentários, apenas
-            tenha em mente que o Blog não está 100% finalizado.
+            Este é um Blog utilizado para compartilhar curiosidades e informações interessantes
+            sobre diversos
+            filmes de diferentes gêneros. Sinta-se a vontade para comentar
+            em nossos posts!
           </S.PresentationDescription>
         </S.PresentationContainer>
 

@@ -10,10 +10,10 @@ const App = ({ Component, pageProps }: AppProps) => {
     <ThemeProvider theme={theme}>
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
-        <title>Blog dos Enrosca Pneu</title>
+        <title>Movie Palace</title>
         <meta
           name="description"
-          content="Blog com assuntos derivados e aleatórios"
+          content="Blog sobre filmes & séries diversas!"
         />
       </Head>
 
